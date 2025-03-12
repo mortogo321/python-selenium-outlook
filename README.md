@@ -1,9 +1,6 @@
 # Python Selenium - Outlook
 Python 3.13.2
 
-NOTE:  
-account must turn <strong>2FA OFF</strong>
-
 ## installation
 ``` bash
 python -m venv env
