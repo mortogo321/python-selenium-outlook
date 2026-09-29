@@ -1,12 +1,12 @@
 # Multi-stage: builder wheels the package, runtime adds Chrome + installs it.
-FROM python:3.13-slim-bookworm AS builder
+FROM python:3.14-slim-bookworm AS builder
 
 WORKDIR /build
 COPY pyproject.toml README.md outlook.py ./
 RUN python -m pip install --upgrade pip \
     && python -m pip wheel -w /wheels .
 
-FROM python:3.13-slim-bookworm AS runtime
+FROM python:3.14-slim-bookworm AS runtime
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
