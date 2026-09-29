@@ -1,7 +1,7 @@
-**/.DS_Store
 __pycache__/
 *.py[cod]
 *.egg-info/
+.wheels/
 build/
 dist/
 .venv/
@@ -14,3 +14,4 @@ env/
 .coverage
 coverage.xml
 htmlcov/
+.DS_Store/
