@@ -18,7 +18,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "selenium==4.49.0",
+    "selenium==4.50.0",
 ]
 
 [project.optional-dependencies]
